@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Movie Lookup</title>
+</head>
+<body>
+    <h1>Movie Search</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class=flashes>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% from "_formhelpers.html" import render_field %}
+    <form method=post>
+        <dl>
+            
+            <p>
+                {{ render_field(form.search) }}
+        </dl>
+        <p><input type=submit value=Search>
+    </form>
+</body>
+</html>
