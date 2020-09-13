@@ -26,9 +26,7 @@ class Responses:
         #print(type(response))
         #print(response['Rated'])
         self.setResponse(response)
-        #pp.pprint(getResponse())
-
-
+        
 
     def setResponse(self,response):
         self.movieData = response

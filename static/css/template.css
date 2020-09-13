@@ -52,3 +52,55 @@
         border: 1px solid #ccc;
     }
 }
+
+
+/*Autocomplete copied code...*/
+#search-form {
+    width: 300px;
+    float: none;
+    margin: 50px auto;
+    position: relative;
+}
+
+    #search-form input {
+        width: 100%;
+        line-height: 50px;
+        padding: 0 15px;
+        outline: none;
+        border-radius: 5px;
+    }
+
+    #search-form #count {
+        position: absolute;
+        padding: 0 10px;
+        line-height: 50px;
+        font-size: 12px;
+        color: rgb(148, 148, 148);
+        right: 0;
+        top: 0;
+    }
+
+.ui-autocomplete {
+    position: absolute;
+    left: 50% !important;
+    transform: translate(-50%);
+    background-color: #f1f1f1;
+    padding: 0;
+    width: 80% !important;
+    top: 125px;
+    border: 1px solid #333;
+    padding: 0 15px;
+}
+
+    .ui-autocomplete .ui-menu-item {
+        list-style-type: none;
+        margin: 15px;
+    }
+
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+.ui-autocomplete-match {
+    color: #006CFC;
+}
